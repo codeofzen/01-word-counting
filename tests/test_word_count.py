@@ -1,5 +1,5 @@
 import pytest
-from word_count import count_words
+from word_count import count_words, count_paragraphs
 
 
 def test_basic():
@@ -25,3 +25,16 @@ def test_tabs():
 
 def test_long_string():
     assert count_words("one two three four five") == 5
+
+
+def test_paragraphs_single():
+    assert count_paragraphs("hello world") == 1
+
+def test_paragraphs_multiple():
+    assert count_paragraphs("hello\nworld\nfoo") == 3
+
+def test_paragraphs_empty():
+    assert count_paragraphs("") == 0
+
+def test_paragraphs_two():
+    assert count_paragraphs("first line\nsecond line") == 2
