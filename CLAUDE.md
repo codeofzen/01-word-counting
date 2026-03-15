@@ -24,6 +24,11 @@ Always run tests before committing. Tests must pass before any commit. Use the M
 make test
 ```
 
+## Branch Naming
+
+- Features: `feature/<name>`
+- Bugfixes: `bugfix/<name>`
+
 ## Key Behaviors
 
 - `count_words(text)` — splits on whitespace (handles multiple spaces, tabs, newlines)
