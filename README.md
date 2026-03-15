@@ -12,7 +12,14 @@ python word_count.py "your string here"
 
 ```bash
 $ python word_count.py "hello world foo"
-3
+Words: 3
+Paragraphs: 1
+```
+
+```bash
+$ python word_count.py $'hello world\nfoo bar\nbaz'
+Words: 5
+Paragraphs: 3
 ```
 
 ## Running Tests
