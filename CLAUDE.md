@@ -18,12 +18,10 @@ python3.11 word_count.py "your string here"
 
 ## Testing
 
-Always run tests before committing. Tests must pass before any commit.
+Always run tests before committing. Tests must pass before any commit. Use the Makefile target:
 
 ```bash
 make test
-# or directly:
-python3.11 -m pytest tests/
 ```
 
 ## Key Behaviors
